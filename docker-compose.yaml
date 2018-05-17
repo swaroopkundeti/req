@@ -6,6 +6,7 @@ services:
       context: ./docker/apache
       dockerfile: Dockerfile
     cap_add:
+      - SETUID
       - SETGID
     cap_drop:
       - ALL
